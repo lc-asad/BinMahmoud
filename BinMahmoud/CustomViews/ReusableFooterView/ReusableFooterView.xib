@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReusableFooterView" customModule="BinMahmoud" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="8PG-5A-8Wo" id="304-KF-2gU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="315"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fX8-8J-7Ex">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="315"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8PG-5A-8Wo">
+                    <rect key="frame" x="8" y="16" width="398" height="126"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tli-ht-tyF">
+                        <size key="itemSize" width="70" height="70"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9Rg-me-ab7">
+                    <rect key="frame" x="45.5" y="172.5" width="323" height="37.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzI-U3-Dcs">
+                            <rect key="frame" x="0.0" y="0.0" width="151.5" height="37.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWt-jV-cLc">
+                                    <rect key="frame" x="-3" y="-3" width="158" height="44"/>
+                                    <state key="normal" image="dashboard_btn_bg"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الإعدادات" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUg-h9-ITE">
+                                    <rect key="frame" x="45" y="4.5" width="61.5" height="28.5"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="WWt-jV-cLc" firstAttribute="centerX" secondItem="wzI-U3-Dcs" secondAttribute="centerX" id="7SF-EE-T1S"/>
+                                <constraint firstItem="WWt-jV-cLc" firstAttribute="centerY" secondItem="wzI-U3-Dcs" secondAttribute="centerY" id="h8Z-fo-XGx"/>
+                                <constraint firstItem="mUg-h9-ITE" firstAttribute="centerY" secondItem="WWt-jV-cLc" secondAttribute="centerY" id="hLt-JH-Pr1"/>
+                                <constraint firstItem="mUg-h9-ITE" firstAttribute="centerX" secondItem="WWt-jV-cLc" secondAttribute="centerX" id="tG1-DD-NU5"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLh-Cy-K6U">
+                            <rect key="frame" x="171.5" y="0.0" width="151.5" height="37.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQn-No-jBy">
+                                    <rect key="frame" x="-3.5" y="-3" width="158" height="44"/>
+                                    <state key="normal" image="dashboard_btn_bg"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عن التطبيق" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3k-a8-P1E">
+                                    <rect key="frame" x="36.5" y="4.5" width="78.5" height="28.5"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="x3k-a8-P1E" firstAttribute="centerX" secondItem="WQn-No-jBy" secondAttribute="centerX" id="J5Z-Qg-n4F"/>
+                                <constraint firstItem="x3k-a8-P1E" firstAttribute="centerY" secondItem="WQn-No-jBy" secondAttribute="centerY" id="M96-qn-rBq"/>
+                                <constraint firstItem="WQn-No-jBy" firstAttribute="centerX" secondItem="uLh-Cy-K6U" secondAttribute="centerX" id="WrC-P5-0Wk"/>
+                                <constraint firstItem="WQn-No-jBy" firstAttribute="centerY" secondItem="uLh-Cy-K6U" secondAttribute="centerY" id="vLn-JN-sdh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حسابات الشيخ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ci-GU-mTK">
+                    <rect key="frame" x="164" y="226" width="86.5" height="31.5"/>
+                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uoh-EZ-bLr">
+                    <rect key="frame" x="124" y="265.5" width="166" height="47.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SR3-Xr-xw0">
+                            <rect key="frame" x="0.0" y="0.0" width="35.5" height="47.5"/>
+                            <state key="normal" image="instagram_icon"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6b-bU-uNo">
+                            <rect key="frame" x="43.5" y="0.0" width="35.5" height="47.5"/>
+                            <state key="normal" image="facebook_icon"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cee-xl-wEW">
+                            <rect key="frame" x="87" y="0.0" width="35.5" height="47.5"/>
+                            <state key="normal" image="twitter_icon"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSf-tr-3rh">
+                            <rect key="frame" x="130.5" y="0.0" width="35.5" height="47.5"/>
+                            <state key="normal" image="settingsIcoCopy12"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8PG-5A-8Wo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="2BB-uV-gbu"/>
+                <constraint firstItem="9Rg-me-ab7" firstAttribute="top" secondItem="8PG-5A-8Wo" secondAttribute="bottom" multiplier="1.2" constant="2" id="6e5-hM-olr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fX8-8J-7Ex" secondAttribute="trailing" id="8w8-Hb-f4j"/>
+                <constraint firstItem="uoh-EZ-bLr" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.15" id="Acz-wv-n61"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fX8-8J-7Ex" secondAttribute="bottom" id="JQT-MH-cfl"/>
+                <constraint firstItem="uoh-EZ-bLr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LQr-dx-xN2"/>
+                <constraint firstItem="fX8-8J-7Ex" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="N7s-W7-wLu"/>
+                <constraint firstItem="9Rg-me-ab7" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.12" id="OwZ-ZN-05W"/>
+                <constraint firstItem="9Rg-me-ab7" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.78" id="RO9-Ns-EXe"/>
+                <constraint firstItem="8PG-5A-8Wo" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.4" id="UVn-yr-tVb"/>
+                <constraint firstItem="2ci-GU-mTK" firstAttribute="top" secondItem="9Rg-me-ab7" secondAttribute="bottom" constant="16" id="Ula-ZN-rhE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="uoh-EZ-bLr" secondAttribute="bottom" constant="50" id="cQm-a3-m53"/>
+                <constraint firstItem="fX8-8J-7Ex" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="cbt-Zh-Nm0"/>
+                <constraint firstItem="9Rg-me-ab7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="g45-Eq-7i3"/>
+                <constraint firstItem="8PG-5A-8Wo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="h2V-3e-cPA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8PG-5A-8Wo" secondAttribute="trailing" constant="8" id="mys-d9-inu"/>
+                <constraint firstItem="2ci-GU-mTK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pnL-OR-zi4"/>
+                <constraint firstItem="2ci-GU-mTK" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.1" id="r2G-OV-j4u"/>
+                <constraint firstItem="uoh-EZ-bLr" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="ri4-uZ-XSb"/>
+                <constraint firstItem="uoh-EZ-bLr" firstAttribute="top" secondItem="2ci-GU-mTK" secondAttribute="bottom" constant="8" id="yZI-wD-JFX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="104" y="226.23688155922042"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dashboard_btn_bg" width="158" height="44"/>
+        <image name="facebook_icon" width="29" height="29"/>
+        <image name="flower_bg" width="403" height="526"/>
+        <image name="instagram_icon" width="29" height="29"/>
+        <image name="settingsIcoCopy12" width="29" height="29"/>
+        <image name="twitter_icon" width="29" height="29"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
